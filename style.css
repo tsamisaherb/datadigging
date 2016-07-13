@@ -1,0 +1,67 @@
+
+body{
+	background-color: lightblue;
+	padding: 1%;
+	width: 100%;
+	margin: 0;
+	font-family: "century gothic", sans-serif;
+	font-size: 80%;
+}
+
+#wrapper{
+	width: 90%;
+	max-width: 700px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+
+h1{
+	color: navy;
+	margin-left: 20px;
+}
+
+span{
+	color: white;
+	font-weight: bold;
+
+}
+
+/*
+	SPAN stuff:
+	span.keyword > span.def is targetting te
+	definition located inside the KEYword span.
+
+	span.keyword:hover span.def is what box
+	appears after you hover over the keyword
+
+	span.keyword:hover > span.def is what happens
+	ONLY when you're hovering over it. 
+
+
+*/
+span.keyword > span.def{
+	width: 200px; 
+	padding: 7px 10px; 
+	margin-top: 20px; 
+	opacity: 0; 
+	visibility: hidden; 
+	z-index: 10; 
+	position: absolute; 
+	display: none; 
+}
+
+span.keyword:hover span.def{ 
+	color: navy; 
+	border: 2px solid navy; 
+	background: lightblue;
+	display: inline-block; 
+	float:relative;
+} 
+
+span.keyword:hover > span.def{ 
+	opacity: 1; 
+	visibility: visible; 
+	overflow: visible; 
+}
+ 

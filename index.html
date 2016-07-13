@@ -1,0 +1,63 @@
+<!-- Index.html is the file to load for all the things.
+	Loads jQuery library and external css/js files. 
+	Makes template elements and assigns them IDs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Load in the jQuery Script library-->
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src = "script.js"></script>
+
+	<!-- Load in the CSS file-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Datta Digging</title>
+</head>
+
+<body>
+
+<!--Put everything inside a wrapper for easy formatting-->
+
+<div id = "wrapper">
+	<h1> Sample Header </h1>
+	<!-- If the heading stuff is same for every page,
+	It doesn't need to be reloaded. Maybe styled differently too. -->
+
+	<div id = "content">
+
+	<!-- Not content but some header things-->
+	<p id = "part1"> sample paragraph 1 </p>
+	<p id = "part2"> sample paragraph 2</p>
+	
+
+	<!-- These elements will be hidden-->
+	<p id = "imgLoader"></p>
+	<p id = "answerlist"></p>
+	<p id = "hasanswer">This is a hasanswer paragraph element</p>
+
+
+	<!-- Load in an image-->
+	<br/>
+	<img id = "img01" alt = " " src = "img0.png" />
+	<br/>
+
+	<!-- Add a text box -->
+	  <input id="inputText" name = "answer box" size = "20"></input>
+	  <button id = "submitButton"> submit </button>
+	  <button id = "nextButton"> next </button>
+
+	  <p id = "nextPage"></p>
+	<!-- Try loading from a text file-
+	<p class = "textFile"> sample Text File Info </p>-->
+
+	<!-- Add a "Tool tip" box-->
+	<div id = "tooltip">
+		 An useful tip. 
+	</div>
+	</div>
+</div>
+
+</body>
+</html>
